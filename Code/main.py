@@ -3,42 +3,16 @@
 # Started 6th March 2021
 
 # Import Requirements
-import time, LEDSim, LEDLive
+import time, Setup
+from Content.Wave import xWave, yWave
 
-# Declare Global Vars
-simOn = True
-
-# Setup for simulated LEDs
-if simOn == True:
-
-    # Iteration Vars
-    x = 0
-    y = 0
-
-    # Declare LEDs
-    rows = 12
-    columns = 32
-    LEDposX = []
-    LEDposY = []
-    while x < columns:
-        LEDposX.append(x)
-        x = x + 1
-    LEDposX = LEDposX * rows
-    while y < rows:
-        LEDposY = LEDposY + ([str(y)] * columns)
-        y = y + 1
-
-
-    def Matrix ():
-        return sim.MatrixSim(32, 12, LEDposX, LEDposY)
-
-else:
-    Matrix = 0
-
+xWave()
+yWave()
+"""
 Matrix.output()
-time.sleep(5)
+time.sleep(1)
 Matrix.Set_Row_On(2)
 Matrix.Set_Row_On(9)
 Matrix.Set_Column_On(2)
 Matrix.Set_Column_On(29)
-Matrix.output()
+Matrix.output()"""
