@@ -1,4 +1,4 @@
-from LEDSim import LEDSim
+import LED.Sim as LEDSim
 
 # Declare Global Vars
 simOn = True
