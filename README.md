@@ -2,10 +2,10 @@
 
 ## To Do
 
-- [-] Code LED Classes
+- [ ] Code LED Classes
 - [x] Code LED Simulator
-- [-] Code Mini Games
-- [-] Code Web Interface
+- [ ] Code Mini Games
+- [ ] Code Web Interface
 
 ## Parts
 
