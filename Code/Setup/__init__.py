@@ -1,3 +1,7 @@
+# Setup file for Raspbery Pi LED Matrix
+# Made by Judah Fuller
+
+# Import Requirements
 import LED.Sim as LEDSim
 
 # Declare Global Vars
@@ -12,7 +16,7 @@ if simOn == True:
     x = 0
     y = 0
 
-    # Declare LEDs
+    # Declare Create Simulated LED Positions
     LEDposX = []
     LEDposY = []
     while x < columns:
@@ -23,12 +27,8 @@ if simOn == True:
         LEDposY = LEDposY + ([str(y)] * columns)
         y = y + 1
 
-
-    def MatrixSetup ():
-        return LEDSim.MatrixSim(columns, rows, LEDposX, LEDposY)
+    #Set the matrix to the simulated one
+    Matrix = LEDSim.MatrixSim(columns, rows, LEDposX, LEDposY)
     
 else:
-    def MatrixSetup ():
-        return False
-
-Matrix = MatrixSetup()
+    Matrix = False

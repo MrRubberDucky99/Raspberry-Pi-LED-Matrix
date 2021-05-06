@@ -6,13 +6,6 @@
 import time, Setup
 from Content.Wave import xWave, yWave
 
+# Run Wave across X axis then Y Axis
 xWave()
 yWave()
-"""
-Matrix.output()
-time.sleep(1)
-Matrix.Set_Row_On(2)
-Matrix.Set_Row_On(9)
-Matrix.Set_Column_On(2)
-Matrix.Set_Column_On(29)
-Matrix.output()"""

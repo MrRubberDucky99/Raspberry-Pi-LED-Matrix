@@ -1,8 +1,8 @@
 # A Content file for Raspbery Pi LED Matrix
 # Content Included, Basic X & Y Waves
 # Made by Judah Fuller
-# Started 6th March 2021
 
+# Import Requirements
 import os, sys, time
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from Setup import Matrix, columns, rows
