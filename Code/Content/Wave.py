@@ -1,5 +1,5 @@
 # A Content file for Raspbery Pi LED Matrix
-# Content Included, Basic X & Y Waves
+# Content Included: Basic X & Y Waves
 # Made by Judah Fuller
 
 # Import Requirements

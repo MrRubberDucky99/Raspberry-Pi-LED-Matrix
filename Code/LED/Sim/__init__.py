@@ -21,6 +21,15 @@ class LEDSim ():
     def getX (self):
         return self.x
 
+    def getY (self):
+        return self.y
+
+    def getpos (self):
+        return self.x, self.y
+    
+    def set_colour (self, colour):
+        self.colour = colour
+
 #Declare Class for Simulating Matrix
 class MatrixSim ():
 
@@ -81,4 +90,10 @@ class MatrixSim ():
             LEDx = self.LEDs[x].getX()
             if LEDx == column:
                 self.LEDs[x].Off()
+            x = x + 1
+    
+    def Reset (self):
+        x = 0
+        while x < self.LEDNum:
+            self.LEDs[x].Off()
             x = x + 1

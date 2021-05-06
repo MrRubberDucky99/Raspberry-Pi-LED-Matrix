@@ -24,7 +24,7 @@ if simOn == True:
         x = x + 1
     LEDposX = LEDposX * rows
     while y < rows:
-        LEDposY = LEDposY + ([str(y)] * columns)
+        LEDposY = LEDposY + ([y] * columns)
         y = y + 1
 
     #Set the matrix to the simulated one
