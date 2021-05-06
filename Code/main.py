@@ -3,13 +3,14 @@
 # Started 6th March 2021
 
 # Import Requirements
-import time, sim, LiveLEDs
+import time, LEDSim, LEDLive
 
 # Declare Global Vars
 simOn = True
 
 # Setup for simulated LEDs
 if simOn == True:
+
     # Iteration Vars
     x = 0
     y = 0
@@ -28,9 +29,16 @@ if simOn == True:
         y = y + 1
 
 
-    Matrix = sim.MatrixSim(32, 12, LEDposX, LEDposY)
+    def Matrix ():
+        return sim.MatrixSim(32, 12, LEDposX, LEDposY)
 
 else:
     Matrix = 0
 
+Matrix.output()
+time.sleep(5)
+Matrix.Set_Row_On(2)
+Matrix.Set_Row_On(9)
+Matrix.Set_Column_On(2)
+Matrix.Set_Column_On(29)
 Matrix.output()

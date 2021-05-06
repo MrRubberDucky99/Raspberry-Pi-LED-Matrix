@@ -3,7 +3,7 @@
 ## To Do
 
 [-] Code LED Classes
-[-] Code LED Simulator
+[x] Code LED Simulator
 [-] Code Mini Games
 [-] Code Web Interface
 
